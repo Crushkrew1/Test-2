@@ -53,9 +53,89 @@
                         }
                     ],
                     "description": "Creates a new rectangle."
+                },
+                {
+                    "atomType": "Circle",
+                    "name": "Circle",
+                    "x": 0.10781249999999999,
+                    "y": 0.5435294117647059,
+                    "uniqueID": "16041c7b-fcf6-4d89-803a-6e2ca1529df0",
+                    "ioValues": [
+                        {
+                            "name": "diameter",
+                            "ioValue": 20
+                        }
+                    ],
+                    "description": "Creates a new circle."
+                },
+                {
+                    "atomType": "Move",
+                    "name": "Move",
+                    "x": 0.18177083333333335,
+                    "y": 0.5599999999999999,
+                    "uniqueID": "de6c22cb-a27c-42f3-8932-708a35cb9443",
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": "16041c7b-fcf6-4d89-803a-6e2ca1529df0"
+                        },
+                        {
+                            "name": "xDist",
+                            "ioValue": 15
+                        },
+                        {
+                            "name": "yDist",
+                            "ioValue": 18
+                        },
+                        {
+                            "name": "zDist",
+                            "ioValue": 0
+                        }
+                    ],
+                    "description": "Moves a shape laterally in X, Y, Z."
+                },
+                {
+                    "atomType": "Difference",
+                    "name": "Difference",
+                    "x": 0.20052083333333334,
+                    "y": 0.2564705882352941,
+                    "uniqueID": "75048578-df55-4197-87a3-30bdf71a947f",
+                    "ioValues": [
+                        {
+                            "name": "geometry1",
+                            "ioValue": "5b60b57a-6d71-4d00-9a35-08a792004618"
+                        },
+                        {
+                            "name": "geometry2",
+                            "ioValue": "de6c22cb-a27c-42f3-8932-708a35cb9443"
+                        }
+                    ],
+                    "description": "Subtracts shape two from shape one."
                 }
             ],
-            "allConnectors": [],
+            "allConnectors": [
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry1",
+                    "ap2Primary": false,
+                    "ap1ID": "5b60b57a-6d71-4d00-9a35-08a792004618",
+                    "ap2ID": "75048578-df55-4197-87a3-30bdf71a947f"
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": "16041c7b-fcf6-4d89-803a-6e2ca1529df0",
+                    "ap2ID": "de6c22cb-a27c-42f3-8932-708a35cb9443"
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry2",
+                    "ap2Primary": false,
+                    "ap1ID": "de6c22cb-a27c-42f3-8932-708a35cb9443",
+                    "ap2ID": "75048578-df55-4197-87a3-30bdf71a947f"
+                }
+            ],
             "fileTypeVersion": 1,
             "compiledBom": {}
         }
