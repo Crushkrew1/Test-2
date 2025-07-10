@@ -63,7 +63,7 @@
                     "ioValues": [
                         {
                             "name": "diameter",
-                            "ioValue": 20
+                            "ioValue": 35
                         }
                     ],
                     "description": "Creates a new circle."
@@ -81,11 +81,11 @@
                         },
                         {
                             "name": "xDist",
-                            "ioValue": 15
+                            "ioValue": 5
                         },
                         {
                             "name": "yDist",
-                            "ioValue": 18
+                            "ioValue": 17
                         },
                         {
                             "name": "zDist",
@@ -97,8 +97,8 @@
                 {
                     "atomType": "Difference",
                     "name": "Difference",
-                    "x": 0.20052083333333334,
-                    "y": 0.2564705882352941,
+                    "x": 0.2015625,
+                    "y": 0.2752941176470588,
                     "uniqueID": "75048578-df55-4197-87a3-30bdf71a947f",
                     "ioValues": [
                         {
