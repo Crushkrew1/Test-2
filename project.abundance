@@ -63,7 +63,7 @@
                     "ioValues": [
                         {
                             "name": "diameter",
-                            "ioValue": 35
+                            "ioValue": 45
                         }
                     ],
                     "description": "Creates a new circle."
@@ -81,11 +81,11 @@
                         },
                         {
                             "name": "xDist",
-                            "ioValue": 5
+                            "ioValue": 10
                         },
                         {
                             "name": "yDist",
-                            "ioValue": 17
+                            "ioValue": 26
                         },
                         {
                             "name": "zDist",
@@ -108,6 +108,64 @@
                         {
                             "name": "geometry2",
                             "ioValue": "de6c22cb-a27c-42f3-8932-708a35cb9443"
+                        }
+                    ],
+                    "description": "Subtracts shape two from shape one."
+                },
+                {
+                    "atomType": "Circle",
+                    "name": "Circle",
+                    "x": 0.13385416666666666,
+                    "y": 0.8164705882352942,
+                    "uniqueID": "41a9990d-1066-4753-b4ea-7b4f8e2d0cf2",
+                    "ioValues": [
+                        {
+                            "name": "diameter",
+                            "ioValue": 45
+                        }
+                    ],
+                    "description": "Creates a new circle."
+                },
+                {
+                    "atomType": "Move",
+                    "name": "Move",
+                    "x": 0.2328125,
+                    "y": 0.8023529411764706,
+                    "uniqueID": "3b0781d1-333e-4923-a21d-1438cbceb17e",
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": "41a9990d-1066-4753-b4ea-7b4f8e2d0cf2"
+                        },
+                        {
+                            "name": "xDist",
+                            "ioValue": -10
+                        },
+                        {
+                            "name": "yDist",
+                            "ioValue": -26
+                        },
+                        {
+                            "name": "zDist",
+                            "ioValue": 0
+                        }
+                    ],
+                    "description": "Moves a shape laterally in X, Y, Z."
+                },
+                {
+                    "atomType": "Difference",
+                    "name": "Difference",
+                    "x": 0.2713541666666667,
+                    "y": 0.4564705882352941,
+                    "uniqueID": "d2c9b9fb-c66d-44c7-9e9d-2af7a7012e0f",
+                    "ioValues": [
+                        {
+                            "name": "geometry1",
+                            "ioValue": "75048578-df55-4197-87a3-30bdf71a947f"
+                        },
+                        {
+                            "name": "geometry2",
+                            "ioValue": "3b0781d1-333e-4923-a21d-1438cbceb17e"
                         }
                     ],
                     "description": "Subtracts shape two from shape one."
@@ -134,6 +192,27 @@
                     "ap2Primary": false,
                     "ap1ID": "de6c22cb-a27c-42f3-8932-708a35cb9443",
                     "ap2ID": "75048578-df55-4197-87a3-30bdf71a947f"
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry1",
+                    "ap2Primary": false,
+                    "ap1ID": "75048578-df55-4197-87a3-30bdf71a947f",
+                    "ap2ID": "d2c9b9fb-c66d-44c7-9e9d-2af7a7012e0f"
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": "41a9990d-1066-4753-b4ea-7b4f8e2d0cf2",
+                    "ap2ID": "3b0781d1-333e-4923-a21d-1438cbceb17e"
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry2",
+                    "ap2Primary": false,
+                    "ap1ID": "3b0781d1-333e-4923-a21d-1438cbceb17e",
+                    "ap2ID": "d2c9b9fb-c66d-44c7-9e9d-2af7a7012e0f"
                 }
             ],
             "fileTypeVersion": 1,
